@@ -18,7 +18,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>質問なんかさせないよーん</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let idx = 0;
+            setInterval(() => {
+                idx % 2 == 0 ? document.title = '質問なんか' : document.title = 'させないよーん';
+                idx++;
+            }, 1000);
+        });
+    </script>
     <style>
         html,
         body {
